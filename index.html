@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EL-Tee Innovations | Software Solutions</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0; padding: 0;
+        line-height: 1.6;
+        background-color: #0B1C2C;
+        color: #f5f5f5;
+    }
+    a { text-decoration: none; color: inherit; }
+    /* Header + Hero */
+    header {
+        text-align: center;
+        padding: 60px 20px 50px 20px;
+        background: linear-gradient(to right, #0077B6, #00BFFF);
+        color: white;
+    }
+    header img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+    header h1 { font-size: 3em; margin-bottom: 15px; }
+    header p { font-size: 1.2em; margin-bottom: 30px; }
+    header .cta-btn {
+        background-color: #FFA500; color: #0B1C2C;
+        padding: 15px 35px; font-size: 1.1em; font-weight: bold;
+        border: none; border-radius: 50px; cursor: pointer; transition: 0.3s;
+    }
+    header .cta-btn:hover { background-color: #e69500; }
+
+    /* Navigation */
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #0077B6;
+    }
+    nav a {
+        color: white; padding: 15px 25px; font-weight: bold; transition: 0.3s;
+    }
+    nav a:hover { background-color: #00BFFF; }
+
+    main { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+    section { margin-bottom: 50px; background-color: #0B1C2C; padding: 30px 20px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.5); }
+    section h2 { color: #FFA500; font-size: 2em; margin-bottom: 20px; text-align: center; }
+    section p { max-width: 800px; margin: 0 auto 20px auto; text-align: center; color: #f5f5f5; }
+
+    /* Cards */
+    .services, .projects { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .service-card, .project-card {
+        flex: 1 1 300px; background-color: #0B1C2C; padding: 25px 20px;
+        border: 2px solid #00BFFF; border-radius: 12px; text-align: center; transition: 0.3s;
+    }
+    .service-card:hover, .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.7); border-color: #FFA500; }
+    .service-card h3, .project-card h3 { color: #00BFFF; margin-bottom: 15px; }
+    .service-card p, .project-card p { font-size: 0.95em; }
+
+    .cta-section { text-align: center; margin-top: 30px; }
+    .cta-section .cta-btn { background-color: #FFA500; color: #0B1C2C; padding: 15px 35px; font-size: 1.2em; font-weight: bold; border: none; border-radius: 50px; cursor: pointer; transition: 0.3s; }
+    .cta-section .cta-btn:hover { background-color: #e69500; }
+
+    footer { text-align: center; padding: 20px; background-color: #0077B6; color: white; }
+
+    @media(max-width: 768px) {
+        .services, .projects { flex-direction: column; align-items: center; }
+        header h1 { font-size: 2.2em; }
+    }
+	
+
+
+.project-logo {
+    width: 50px;   /* small logo width */
+    height: 50px;  /* small logo height */
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<header>
+    <img src="elte-logo.png" alt="EL-Tee Innovations Logo"> <!-- Place your logo here -->
+    <h1>EL-Tee Innovations</h1>
+    <p>Innovating Digital Solutions. We build websites, apps, and custom software to transform your business.</p>
+    <button class="cta-btn" onclick="window.location.href='#contact'">Get Started Today</button>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Our Systems</a>
+	<a href="el_tee_training_school_page.html" target="_blank">Training School</a>
+    <a href="#el_tee_training_school_page.html">Contact</a>
+</nav>
+
+<main>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About EL-Tee Innovations</h2>
+        <p>At EL-Tee Innovations, we combine creativity and technology to deliver solutions that help your business thrive. We are passionate about crafting software that is reliable, scalable, and user-friendly.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Responsive and modern websites that convert visitors into loyal customers.</p>
+            </div>
+            <div class="service-card">
+                <h3>Mobile Applications</h3>
+                <p>Native and cross-platform mobile apps designed for optimal user experience.</p>
+            </div>
+            <div class="service-card">
+                <h3>Custom Software</h3>
+                <p>Tailored software solutions to streamline operations and boost efficiency.</p>
+            </div>
+            <div class="service-card">
+                <h3>Maintenance & Support</h3>
+                <p>Reliable support to ensure your software stays updated and runs smoothly.</p>
+            </div>
+        </div>
+        <div class="cta-section">
+            <button class="cta-btn" onclick="window.location.href='#contact'">Hire Us Now</button>
+        </div>
+    </section>
+
+    <!-- Projects / Systems Section -->
+    <section id="projects">
+        <h2>Systems We’ve Built</h2>
+<div class="projects">
+    <div class="project-card">
+        <img src="tlink-logo.png" alt="TLink Portal Logo" class="project-logo">
+        <h3>TLink Portal</h3>
+        <p>A job portal system which connects recruiters to potential candidates with built in video introductions and assessments.</p>
+    </div>
+    <div class="project-card">
+        <img src="hala-logo.png" alt="Helping A Learner Achieve Logo" class="project-logo">
+        <h3>Helping A Learner Achieve</h3>
+        <p>Website for a tech centered NPO</p>
+    </div>
+</div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:firstdesk.elteeinnovations@outlook.com">firstdesk.elteeinnovations@outlook.com</a></p>
+        <p>Phone: +27 64 604 5612</p>
+        <div class="cta-section">
+            <button class="cta-btn" onclick="window.location.href='mailto:contact@elteinnovations.com'">Send Us an Email</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    &copy; 2026 EL-Tee Innovations. All Rights Reserved.
+</footer>
+
+</body>
+</html>

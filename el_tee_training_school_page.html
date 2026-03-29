@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EL-Tee Training School</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        background-color: #0B1C2C;
+        color: #f5f5f5;
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(to right, #0077B6, #00BFFF);
+    }
+
+    header h1 { font-size: 2.5em; }
+    header p { font-size: 1.2em; }
+
+    .cta-btn {
+        background-color: #FFA500;
+        color: #0B1C2C;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    main {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    section {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    h2 { color: #FFA500; }
+
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 280px;
+        border: 2px solid #00BFFF;
+        border-radius: 12px;
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        border-color: #FFA500;
+        transform: translateY(-5px);
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #0077B6;
+    }
+</style>
+</head>
+<body>
+<!-- Slim Promo Banner -->
+<div style="background-color:#FFA500; color:#0B1C2C; text-align:center; padding:10px; font-weight:bold;">
+    🚀 Web Development Class starting 13 April 2026 — 
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPjRIpwy2vzH2d47UhKC2T-7s7q5Z8565wNi8HuF3dyV1WUQ/viewform?usp=header" target="_blank" style="color:#0B1C2C; text-decoration:underline;">Click here to register</a>
+</div>
+<header>
+    <h1>EL-Tee Training School</h1>
+    <p>Learn in-demand tech skills. Build real projects. Start your career.</p>
+    <button class="cta-btn" onclick="window.location.href='mailto:firstdesk.elteeinnovations@outlook.com'">Enroll Now</button>
+</header>
+
+<main>
+
+<section>
+    <h2>Our Programs</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Web Development Bootcamp</h3>
+            <p>HTML, CSS, JavaScript, GitHub & React basics.</p>
+        </div>
+        <div class="card">
+            <h3>Software Testing (QA)</h3>
+            <p>Manual testing, bug reporting, ISTQB aligned skills.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>What You Will Gain</h2>
+    <div class="grid">
+        <div class="card">Real-world projects</div>
+        <div class="card">Portfolio & GitHub experience</div>
+        <div class="card">Mentorship</div>
+        <div class="card">Certificate of Completion</div>
+    </div>
+</section>
+
+
+
+<section>
+    <h2>Career Opportunities</h2>
+
+    <!-- Toggle Buttons -->
+    <div style="text-align:center; margin-bottom:20px;">
+        <button class="cta-btn" onclick="showTab('dev')">Development</button>
+        <button class="cta-btn" onclick="showTab('qa')">QA / Testing</button>
+    </div>
+
+    <!-- Development Content -->
+    <div id="dev" class="tab-content">
+        <div class="grid">
+            <div class="card">
+                <h3>Roles</h3>
+                <p>Web Developer<br>Junior Developer<br>Front-End Developer</p>
+            </div>
+            <div class="card">
+                <h3>Skills</h3>
+                <p>HTML, CSS, JavaScript<br>React Basics<br>Git & GitHub<br>Projects</p>
+            </div>
+            <div class="card">
+                <h3>Salary</h3>
+                <p>R180,000 – R360,000/year</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- QA Content -->
+    <div id="qa" class="tab-content" style="display:none;">
+        <div class="grid">
+            <div class="card">
+                <h3>Roles</h3>
+                <p>QA Tester<br>Test Analyst<br>Automation Tester</p>
+            </div>
+            <div class="card">
+                <h3>Skills</h3>
+                <p>Manual Testing<br>Bug Reporting<br>Test Cases<br>ISTQB Concepts</p>
+            </div>
+            <div class="card">
+                <h3>Salary</h3>
+                <p>R200,000 – R350,000/year</p>
+            </div>
+           
+        </div>
+    </div>
+
+</section>
+
+<script>
+function showTab(tab) {
+    document.getElementById('dev').style.display = tab === 'dev' ? 'block' : 'none';
+    document.getElementById('qa').style.display = tab === 'qa' ? 'block' : 'none';
+}
+</script>
+
+<section>
+    <h2>Entry-Level Salaries (South Africa)</h2>
+    <p>💻 Web Developer: R180,000 – R360,000+ per year</p>
+    <p>🧪 QA Tester: R200,000 – R350,000+ per year</p>
+    <p style="margin-top:15px; font-size:0.95em; color:#ccc;">*Example: Junior QA Testers can earn around R20,000/month depending on skills and experience.</p>
+</section>
+
+<section>
+    <h2>Pricing</h2>
+    <p><strong>Full Program:</strong> R1,500</p>
+    <p>OR</p>
+    <p><strong>Installments:</strong> R500 x 3 months</p>
+</section>
+
+<section>
+    <h2>Start Your Journey</h2>
+    <button class="cta-btn" onclick="window.location.href='mailto:firstdesk.elteeinnovations@outlook.com'">Apply Now</button>
+</section>
+
+</main>
+
+<footer>
+    &copy; 2026 EL-Tee Innovations Training School
+</footer>
+
+</body>
+</html>
