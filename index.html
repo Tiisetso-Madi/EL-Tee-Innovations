@@ -16,7 +16,7 @@
     /* Header + Hero */
     header {
         text-align: center;
-        padding: 60px 20px 50px 20px;
+        padding: 60px 20px 20px 20px;
         background: linear-gradient(to right, #0077B6, #00BFFF);
         color: white;
     }
@@ -33,8 +33,7 @@
     }
     header .cta-btn:hover { background-color: #e69500; }
 
-    /* Navigation */
-    nav {
+  nav {
         display: flex;
         justify-content: center;
         background-color: #0077B6;
@@ -82,22 +81,25 @@
 </head>
 <body>
 
-<!-- Hero Section -->
-<header>
-    <img src="elte-logo.png" alt="EL-Tee Innovations Logo"> <!-- Place your logo here -->
-    <h1>EL-Tee Innovations</h1>
-    <p>Innovating Digital Solutions. We build websites, apps, and custom software to transform your business.</p>
-    <button class="cta-btn" onclick="window.location.href='#contact'">Get Started Today</button>
-</header>
 
+
+<!-- Hero Section -->
+<header style="position:relative; padding:30px 20px 50px 20px; text-align:center; background: linear-gradient(to right, #0077B6, #00BFFF); color:white;">
+    <img src="elte-logo.png" alt="EL-Tee Innovations Logo" style="height:50px; width: 50px; position:absolute; top:20px; left:20px;">
+    <h1 style="margin-top:20px;">EL-Tee Innovations</h1>
+    <p>Innovating Digital Solutions. We build websites, apps, and custom software to transform your business.</p>
+    <button class="cta-btn" onclick="window.location.href='#contact'" style="margin-top:15px;">Get Started Today</button>
+</header>
 <!-- Navigation -->
 <nav>
+    
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#projects">Our Systems</a>
-	<a href="el_tee_training_school_page.html" target="_blank">Training School</a>
-    <a href="#el_tee_training_school_page.html">Contact</a>
+    <a href="el_tee_training_school_page.html" target="_blank">Training School</a>
+    <a href="#contact">Contact</a>
 </nav>
+
 
 <main>
     <!-- About Section -->
